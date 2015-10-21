@@ -34,6 +34,7 @@ There are several parts to all this and they are:
   disabled, though.
 * Doesn't clear cache and history when Firefox is closed (cookies, form data
   and other stuff are still cleared).
+* Doesn't disable built-in PDF viewer.
 
 How to use the user.js file
 ---------------------------
