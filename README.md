@@ -1,6 +1,10 @@
 Firefox hardening
 =================
 
+**NOTE**: this is a fork of [pyllyukko's
+version](https://github.com/pyllyukko/user.js).  This version has some
+differences, see below.
+
 What's all this then?
 ---------------------
 
@@ -10,7 +14,6 @@ This is a [user.js][1] configuration file for Mozilla Firefox that's supposed to
 
 * Limit the possibilities to track the user through [web analytics](https://en.wikipedia.org/wiki/Web_analytics)
 * Harden the browser, so it doesn't spill it's guts when asked (have you seen what [BeEF](http://beefproject.com/) can do?)
-* Limit the browser from storing anything even remotely sensitive persistently (mostly just making sure [private browsing][8] is always on)
 * Make sure the browser doesn't reveal too much information to [shoulder surfers](https://en.wikipedia.org/wiki/Shoulder_surfing_%28computer_security%29)
 * Harden the browser's encryption (cipher suites, protocols, trusted CAs)
 * Hopefully limit the attack surface by disabling various features
@@ -24,6 +27,14 @@ There are several parts to all this and they are:
 * Using the user.js settings file itself
 * Using the **cas.sh** script to limit the CAs
 
+### Differences from pyllyukko's version
+
+* Doesn't start [private browsing][8] always.
+* Doesn't disable cache and history.  CSS visited links history is still
+  disabled, though.
+* Doesn't clear cache and history when Firefox is closed (cookies, form data
+  and other stuff are still cleared).
+
 How to use the user.js file
 ---------------------------
 
@@ -32,7 +43,7 @@ Just drop the [user.js][1] file to your Firefox profile directory at ````~/.mozi
 If you want to be able to keep your [user.js][1] up-to-date with this repository, you can clone the latter in the main mozilla directory and create a link to the [user.js][1] file from your profile:
 ````
 cd ~/.mozilla/firefox
-git clone 'https://github.com/pyllyukko/user.js.git'
+git clone 'https://github.com/rcabralc/user.js.git'
 cd XXXXXXXX.your_profile_name
 ln -s ../user.js/user.js user.js
 ````
@@ -128,7 +139,6 @@ See also [#20](https://github.com/pyllyukko/user.js/issues/20).
 
 ### Caching
 
-* Permanently enables [private browsing][8] mode
 * Prevents Firefox from storing data filled in web page forms
 * Disables [password manager](https://support.mozilla.org/en-US/kb/Remembering+passwords)
 
