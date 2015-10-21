@@ -35,6 +35,7 @@ There are several parts to all this and they are:
 * Doesn't clear cache and history when Firefox is closed (cookies, form data
   and other stuff are still cleared).
 * Doesn't disable built-in PDF viewer.
+* Doesn't prompt user to update/verify plugins/addons.
 
 How to use the user.js file
 ---------------------------
@@ -105,7 +106,6 @@ It is common for [client side attacks](https://www.offensive-security.com/metasp
 
 * Disable flash
 * Enable [click to play](https://wiki.mozilla.org/Firefox/Click_To_Play)
-* Enable [add-on updates](https://blog.mozilla.org/addons/how-to-turn-off-add-on-updates/)
 
 ### Firefox features
 
