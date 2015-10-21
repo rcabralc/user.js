@@ -397,11 +397,6 @@ user_pref("network.IDN_show_punycode",		true);
 user_pref("browser.urlbar.autoFill",		false);
 user_pref("browser.urlbar.autoFill.typed",		false);
 
-// http://www.labnol.org/software/browsers/prevent-firefox-showing-bookmarks-address-location-bar/3636/
-// http://kb.mozillazine.org/Browser.urlbar.maxRichResults
-// "Setting the preference to 0 effectively disables the Location Bar dropdown entirely."
-user_pref("browser.urlbar.maxRichResults",		0);
-
 // https://blog.mozilla.org/security/2010/03/31/plugging-the-css-history-leak/
 // http://dbaron.org/mozilla/visited-privacy
 user_pref("layout.css.visited_links_enabled",		false);

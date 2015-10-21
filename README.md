@@ -36,6 +36,10 @@ There are several parts to all this and they are:
   and other stuff are still cleared).
 * Doesn't disable built-in PDF viewer.
 * Doesn't prompt user to update/verify plugins/addons.
+* Allows [suggesting any
+  URLs](http://kb.mozillazine.org/Browser.urlbar.maxRichResults) while typing
+  at the address bar.  Since history is enabled, use it.
+
 
 How to use the user.js file
 ---------------------------
@@ -142,10 +146,6 @@ See also [#20](https://github.com/pyllyukko/user.js/issues/20).
 
 * Prevents Firefox from storing data filled in web page forms
 * Disables [password manager](https://support.mozilla.org/en-US/kb/Remembering+passwords)
-
-### UI related
-
-* Don't [suggest any URLs](http://kb.mozillazine.org/Browser.urlbar.maxRichResults) while typing at the address bar
 
 ### TLS / HTTPS / OCSP related
 
