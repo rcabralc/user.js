@@ -404,7 +404,8 @@ user_pref("layout.css.visited_links_enabled",		false);
 // http://kb.mozillazine.org/Places.frecency.unvisited%28place_type%29Bonus
 
 // http://kb.mozillazine.org/Disabling_autocomplete_-_Firefox#Firefox_3.5
-user_pref("browser.urlbar.autocomplete.enabled",		false);
+// Don't disable autocomplete, since history lookup requires it enabled.
+// user_pref("browser.urlbar.autocomplete.enabled",		false);
 
 // http://kb.mozillazine.org/Signon.autofillForms
 // https://www.torproject.org/projects/torbrowser/design/#identifier-linkability
