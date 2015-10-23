@@ -88,9 +88,6 @@ user_pref("webgl.disabled",		true);
 // Default search engine
 //user_pref("browser.search.defaultenginename",		"DuckDuckGo");
 
-// http://kb.mozillazine.org/Clipboard.autocopy
-user_pref("clipboard.autocopy",		false);
-
 // Display an error message indicating the entered information is not a valid
 // URL instead of asking from google.
 // http://kb.mozillazine.org/Keyword.enabled#Caveats

@@ -39,6 +39,8 @@ There are several parts to all this and they are:
 * Allows [suggesting any
   URLs](http://kb.mozillazine.org/Browser.urlbar.maxRichResults) while typing
   at the address bar.  Since history is enabled, use it.
+* Doesn't disable [clipboard automatic selection
+  copy](http://kb.mozillazine.org/Clipboard.autocopy).
 
 
 How to use the user.js file
